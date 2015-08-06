@@ -14,6 +14,8 @@ class MainTabBarController: UITabBarController {
     var funnelView: SecondViewController!
     
     
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         timelineView = FirstViewController()
@@ -25,8 +27,16 @@ class MainTabBarController: UITabBarController {
         var funnelNavigationController = UINavigationController(rootViewController: funnelView)
         self.setViewControllers([timelineNavigationController, funnelNavigationController], animated: false)
         
-        UITabBar.appearance().barTintColor = UIColor(red: 0.12, green: 0.35, blue: 0.2, alpha: 0.3)
+        UITabBar.appearance().barTintColor = UIColor(red: 199/255, green: 229/255, blue: 250/255, alpha: 1.0)
+        
+        
+        
+               
+        
     }
+    
+   
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
